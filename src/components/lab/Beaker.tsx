@@ -3,7 +3,7 @@
 import React from 'react';
 import { useDroppable } from '@dnd-kit/core';
 import { useLabStore } from '@/store/labStore';
-import BeakerCanvas from './BeakerCanvas';
+import Scene3D from '../3d/Scene3D';
 import { Chemical } from '@/types/chemistry';
 
 export default function Beaker() {
@@ -29,7 +29,7 @@ export default function Beaker() {
           minHeight: '400px'
         }}
       >
-        <BeakerCanvas />
+        <Scene3D />
         
         {/* Drop hint */}
         {chemicalsInBeaker.length === 0 && (

@@ -2,8 +2,8 @@
  * Core TypeScript types for Chemistry Reaction Simulator
  */
 
-export type ChemicalType = 'acid' | 'base' | 'salt' | 'metal' | 'nonmetal' | 'organic' | 'indicator';
-export type HazardLevel = 'safe' | 'caution' | 'warning' | 'danger';
+export type ChemicalType = 'acid' | 'base' | 'salt' | 'metal' | 'nonmetal' | 'organic' | 'indicator' | 'neutral' | 'gas';
+export type HazardLevel = 'safe' | 'caution' | 'warning' | 'danger' | 'Corrosive' | 'None' | 'Toxic' | 'Flammable' | 'Flammable (powder)' | 'Oxidizer' | 'Asphyxiant';
 export type ReactionType = 'neutralization' | 'precipitation' | 'gas-evolution' | 'color-change' | 'combustion' | 'redox' | 'none';
 
 export interface Chemical {
@@ -14,6 +14,8 @@ export interface Chemical {
   type: ChemicalType;
   hazard: HazardLevel;
   description?: string;
+  state?: string;
+  molarMass?: number;
 }
 
 export interface VisualEffects {
