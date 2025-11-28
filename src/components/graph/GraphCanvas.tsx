@@ -15,25 +15,35 @@ export default function GraphCanvas({ onNodeClick }: GraphCanvasProps) {
 
   useEffect(() => {
     const graphElements = getGraphElements();
-    setElements(graphElements);
+    console.log('Graph elements:', graphElements);
+    if (graphElements && graphElements.length > 0) {
+      setElements(graphElements);
+    }
   }, []);
 
   const layout = {
-    name: 'cose', // Physics-based force-directed layout
+    name: 'cose',
     animate: true,
-    animationDuration: 1000,
-    fit: true, // Fit to viewport
-    padding: 50,
-    randomize: true, // Random initial positions
-    nodeRepulsion: 8000, // How much nodes push away from each other
-    idealEdgeLength: 100, // Preferred edge length
-    edgeElasticity: 100,
-    nestingFactor: 1.2,
-    gravity: 1, // Pull towards center
-    numIter: 1000,
-    initialTemp: 200,
-    coolingFactor: 0.95,
-    minTemp: 1.0
+    animationDuration: 1500,
+    animationEasing: 'ease-out',
+    fit: true,
+    padding: 80,
+    randomize: true,
+    componentSpacing: 120,
+    nodeRepulsion: 12000, // Increased for more spacing
+    idealEdgeLength: 120, // Longer edges for better spread
+    edgeElasticity: 150,
+    nestingFactor: 1.5,
+    gravity: 0.8, // Reduced gravity for wider spread
+    numIter: 1500, // More iterations for better settling
+    initialTemp: 250,
+    coolingFactor: 0.98,
+    minTemp: 1.0,
+    // Add quality of life improvements
+    nodeOverlap: 20,
+    refresh: 20,
+    boundingBox: undefined,
+    avoidOverlap: true
   };
 
   const stylesheet: any[] = [
@@ -43,18 +53,25 @@ export default function GraphCanvas({ onNodeClick }: GraphCanvasProps) {
         'label': 'data(label)',
         'text-valign': 'bottom',
         'text-halign': 'center',
-        'text-margin-y': 8,
-        'font-size': '12px',
+        'text-margin-y': 10,
+        'font-size': '13px',
         'font-family': 'Poppins, sans-serif',
-        'color': '#475569', // Slate-600
+        'font-weight': '500',
+        'color': '#1e293b',
+        'text-background-color': '#ffffff',
+        'text-background-opacity': 0.9,
+        'text-background-padding': '4px',
+        'text-background-shape': 'roundrectangle',
         'background-color': 'data(color)',
-        'width': 40,
-        'height': 40,
-        'border-width': 2,
+        'width': 50,
+        'height': 50,
+        'border-width': 3,
         'border-color': '#fff',
+        'border-opacity': 0.9,
         'overlay-opacity': 0,
         'transition-property': 'background-color, width, height, border-width',
         'transition-duration': 300,
+        'box-shadow': '0 4px 6px rgba(0, 0, 0, 0.1)'
       } as any
     },
     {

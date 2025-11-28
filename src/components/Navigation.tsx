@@ -30,6 +30,9 @@ export default function Navigation() {
             <Link href="/lab" className="text-gray-600 hover:text-indigo-600 font-medium transition-colors">
               {t('lab')}
             </Link>
+             <Link href="/builder" className="text-gray-600 hover:text-indigo-600 font-medium transition-colors">
+              {t('builder')}
+            </Link>
             <Link href="/history" className="text-gray-600 hover:text-indigo-600 font-medium transition-colors">
               {t('history')}
             </Link>

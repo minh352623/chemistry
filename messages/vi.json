@@ -14,7 +14,8 @@
     "lab": "Phòng thí nghiệm",
     "knowledge": "Bản đồ kiến thức",
     "history": "Lịch sử",
-    "about": "Giới thiệu"
+    "about": "Giới thiệu",
+    "builder": "Trình tạo phản ứng"
   },
   "chemistry": {
     "acid": "Axit",
@@ -80,5 +81,28 @@
     "safety": "An toàn",
     "warning": "Cảnh báo",
     "caution": "Thận trọng"
+  },
+  "builder": {
+    "title": "Trình tạo phản ứng",
+    "subtitle": "Công cụ xây dựng phương trình hóa học tương tác",
+    "reactants": "Chất phản ứng",
+    "products": "Sản phẩm",
+    "analyzeReaction": "Phân tích phản ứng",
+    "analyzing": "Đang phân tích...",
+    "clear": "Xóa",
+    "balancedEquation": "Phương trình đã cân bằng",
+    "balanced": "Đã cân bằng",
+    "coefficients": "Hệ số",
+    "aiExplanation": "Giải thích AI",
+    "tryExperiment": "Thử nghiệm (Hiệu ứng)",
+    "reactionAnalysis": "Phân tích phản ứng",
+    "types": "Loại",
+    "compoundToolbox": "Hộp công cụ hóa chất",
+    "searchPlaceholder": "Tìm kiếm hóa chất...",
+    "filterByType": "Lọc theo loại",
+    "allTypes": "Tất cả",
+    "nothingFound": "Không tìm thấy",
+    "addBothSides": "Vui lòng thêm cả chất phản ứng và sản phẩm",
+    "analysisFailed": "Không thể phân tích phản ứng. Vui lòng thử lại."
   }
 }

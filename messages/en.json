@@ -14,7 +14,8 @@
     "lab": "Lab Simulator",
     "knowledge": "Knowledge Graph",
     "history": "History",
-    "about": "About"
+    "about": "About",
+    "builder": "Reaction Builder"
   },
   "chemistry": {
     "acid": "Acid",
@@ -80,5 +81,28 @@
     "safety": "Safety",
     "warning": "Warning",
     "caution": "Caution"
+  },
+  "builder": {
+    "title": "Reaction Builder",
+    "subtitle": "Interactive Chemical Equation Constructor",
+    "reactants": "Reactants",
+    "products": "Products",
+    "analyzeReaction": "Analyze Reaction",
+    "analyzing": "Analyzing...",
+    "clear": "Clear",
+    "balancedEquation": "Balanced Equation",
+    "balanced": "Balanced",
+    "coefficients": "Coefficients",
+    "aiExplanation": "AI Explanation",
+    "tryExperiment": "Try Experiment (VFX)",
+    "reactionAnalysis": "Reaction Analysis",
+    "types": "Types",
+    "compoundToolbox": "Compound Toolbox",
+    "searchPlaceholder": "Search chemicals...",
+    "filterByType": "Filter by type",
+    "allTypes": "All Types",
+    "nothingFound": "Nothing found",
+    "addBothSides": "Please add both reactants and products",
+    "analysisFailed": "Failed to analyze reaction. Please try again."
   }
 }
