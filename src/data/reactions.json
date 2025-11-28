@@ -1,0 +1,242 @@
+[
+  {
+    "id": "neutralization-hcl-naoh",
+    "reactants": ["hcl", "naoh"],
+    "products": ["Sodium Chloride", "Water"],
+    "type": "neutralization",
+    "equation": "HCl + NaOH → NaCl + H₂O",
+    "explanation": "A classic neutralization reaction where an acid (HCl) reacts with a base (NaOH) to form a salt (NaCl) and water. The reaction is exothermic, releasing heat.",
+    "safety": "Safe reaction, but reactants are corrosive.",
+    "effects": {
+      "color": "#E8F4F8",
+      "bubbles": "small",
+      "temperatureChange": 8
+    },
+    "animationConfig": {
+      "type": "neutralization",
+      "duration": 3000,
+      "bubbles": { "speed": "slow", "density": 0.3, "size": "small" },
+      "glow": { "color": "#ffcc66", "intensity": 0.4, "duration": 2000 },
+      "colorTransition": { "from": "#ffffff", "to": "#E8F4F8", "duration": 2000 }
+    }
+  },
+  {
+    "id": "precipitation-agno3-nacl",
+    "reactants": ["agno3", "nacl"],
+    "products": ["Silver Chloride (Solid)", "Sodium Nitrate"],
+    "type": "precipitation",
+    "equation": "AgNO₃ + NaCl → AgCl↓ + NaNO₃",
+    "explanation": "Silver nitrate reacts with sodium chloride to form silver chloride, an insoluble white precipitate.",
+    "safety": "Silver nitrate stains skin. Handle with care.",
+    "effects": {
+      "color": "#FFFFFF",
+      "precipitate": {
+        "color": "#FFFFFF",
+        "amount": "heavy"
+      }
+    },
+    "animationConfig": {
+      "type": "precipitation",
+      "duration": 4000,
+      "precipitate": {
+        "particleSize": [2, 4],
+        "fallSpeed": "medium",
+        "density": "heavy",
+        "cloudiness": 0.7,
+        "settleAnimation": true,
+        "color": "#FFFFFF"
+      },
+      "colorTransition": { "from": "#transparent", "to": "rgba(255,255,255,0.8)", "duration": 1000 }
+    }
+  },
+  {
+    "id": "gas-evolution-nahco3-ch3cooh",
+    "reactants": ["nahco3", "ch3cooh"],
+    "products": ["Carbon Dioxide", "Water", "Sodium Acetate"],
+    "type": "gas-evolution",
+    "equation": "NaHCO₃ + CH₃COOH → CO₂↑ + H₂O + NaCH₃COO",
+    "explanation": "Baking soda reacts with vinegar to release carbon dioxide gas, creating a fizzy eruption.",
+    "safety": "Safe household reaction.",
+    "effects": {
+      "bubbles": "large",
+      "gas": {
+        "type": "CO₂",
+        "intensity": 8
+      }
+    },
+    "animationConfig": {
+      "type": "gas-formation",
+      "duration": 5000,
+      "gas": {
+        "speed": "fast",
+        "burstAtTop": true,
+        "density": 0.8,
+        "popParticles": true,
+        "steamEffect": { "rise": true, "disperse": true, "intensity": 0.5 }
+      }
+    }
+  },
+  {
+    "id": "color-change-cuso4-nh3",
+    "reactants": ["cuso4", "nh3"],
+    "products": ["Tetraamminecopper(II) Sulfate"],
+    "type": "color-change",
+    "equation": "CuSO₄ + 4NH₃ → [Cu(NH₃)₄]SO₄",
+    "explanation": "Copper sulfate reacts with ammonia to form a deep blue complex ion.",
+    "safety": "Ammonia has strong fumes. Use in well-ventilated area.",
+    "effects": {
+      "color": "#00008B",
+      "glow": true
+    },
+    "animationConfig": {
+      "type": "double-displacement", 
+      "duration": 3000,
+      "colorTransition": { "from": "#87CEEB", "to": "#00008B", "duration": 2000 },
+      "glow": { "color": "#4169E1", "intensity": 0.6, "duration": 3000, "pulse": true },
+      "swirl": {
+        "colors": ["#87CEEB", "#00008B"],
+        "pattern": "spiral",
+        "collisionPoint": { "x": 0.5, "y": 0.5 },
+        "resultColor": "#00008B",
+        "particleCount": 20,
+        "spiralSpeed": "medium"
+      }
+    }
+  },
+  {
+    "id": "neutralization-h2so4-naoh",
+    "reactants": ["h2so4", "naoh"],
+    "products": ["Sodium Sulfate", "Water"],
+    "type": "neutralization",
+    "equation": "H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O",
+    "explanation": "Strong acid-base neutralization. Highly exothermic.",
+    "safety": "Caution: Generates significant heat.",
+    "effects": {
+      "color": "#FFFFFF",
+      "smoke": true,
+      "temperatureChange": 15
+    },
+    "animationConfig": {
+      "type": "neutralization",
+      "duration": 3000,
+      "bubbles": { "speed": "medium", "density": 0.4, "size": "medium" },
+      "gas": { "speed": "slow", "burstAtTop": false, "density": 0.3, "popParticles": false, "steamEffect": { "rise": true, "disperse": true, "intensity": 0.6 } },
+      "temperatureEffect": "hot"
+    }
+  },
+  {
+    "id": "redox-fe-s",
+    "reactants": ["fe", "s"],
+    "products": ["Iron(II) Sulfide"],
+    "type": "redox",
+    "equation": "Fe + S → FeS",
+    "explanation": "Iron and sulfur react when heated to form iron sulfide. A classic synthesis reaction.",
+    "safety": "Requires heat. Sulfur fumes are unpleasant.",
+    "requiresHeat": true,
+    "effects": {
+      "color": "#333333",
+      "smoke": true,
+      "glow": true
+    },
+    "animationConfig": {
+      "type": "redox",
+      "duration": 4000,
+      "colorTransition": { "from": "#808080", "to": "#333333", "duration": 3000 },
+      "sparks": { "count": 30, "color": "#FFA500", "size": 2, "lifetime": 500 },
+      "glow": { "color": "#FF4500", "intensity": 0.5, "duration": 4000, "pulse": true }
+    }
+  },
+  {
+    "id": "gas-evolution-nahco3-hcl",
+    "reactants": ["nahco3", "hcl"],
+    "products": ["Carbon Dioxide", "Water", "Sodium Chloride"],
+    "type": "gas-evolution",
+    "equation": "NaHCO₃ + HCl → CO₂↑ + H₂O + NaCl",
+    "explanation": "Baking soda reacts vigorously with strong acid to produce gas.",
+    "safety": "Wear eye protection.",
+    "effects": {
+      "bubbles": "large",
+      "gas": {
+        "type": "CO₂",
+        "intensity": 10
+      }
+    },
+    "animationConfig": {
+      "type": "gas-formation",
+      "duration": 4000,
+      "gas": {
+        "speed": "fast",
+        "burstAtTop": true,
+        "density": 0.9,
+        "popParticles": true
+      }
+    }
+  },
+  {
+    "id": "combustion-kno3-s",
+    "reactants": ["kno3", "s"],
+    "products": ["Potassium Sulfide", "Nitrogen", "Sulfur Dioxide"],
+    "type": "combustion",
+    "equation": "2KNO₃ + S + 3C → K₂S + N₂ + 3CO₂",
+    "explanation": "A component of gunpowder reaction. Highly energetic!",
+    "safety": "DANGER: Explosive reaction. Do not attempt.",
+    "requiresHeat": true,
+    "effects": {
+      "explosion": true,
+      "smoke": true,
+      "temperatureChange": 50
+    },
+    "animationConfig": {
+      "type": "combustion",
+      "duration": 2000,
+      "flash": { "color": "#FFFF00", "intensity": 1.0, "duration": 200, "fadeOut": true },
+      "flame": { "flicker": true, "colors": ["#FF0000", "#FFA500", "#FFFF00"], "height": 0.8, "duration": 1500 },
+      "sparks": { "count": 100, "color": "#FFFFFF", "size": 3, "lifetime": 800 }
+    }
+  },
+  {
+    "id": "redox-cuso4-fe",
+    "reactants": ["cuso4", "fe"],
+    "products": ["Iron(II) Sulfate", "Copper"],
+    "type": "redox",
+    "equation": "CuSO₄ + Fe → FeSO₄ + Cu",
+    "explanation": "Single displacement reaction. Iron displaces copper from the solution.",
+    "safety": "Safe to observe.",
+    "effects": {
+      "color": "#90EE90",
+      "precipitate": {
+        "color": "#B87333",
+        "amount": "moderate"
+      }
+    },
+    "animationConfig": {
+      "type": "redox",
+      "duration": 5000,
+      "colorTransition": { "from": "#0000FF", "to": "#90EE90", "duration": 4000 },
+      "precipitate": { "particleSize": [2, 3], "fallSpeed": "slow", "density": "moderate", "cloudiness": 0.4, "settleAnimation": true, "color": "#B87333" },
+      "electronFlow": { "paths": ["anode-to-cathode"], "particleCount": 10, "color": "#FFFF00", "speed": "slow" }
+    }
+  },
+  {
+    "id": "neutralization-nh3-hcl",
+    "reactants": ["nh3", "hcl"],
+    "products": ["Ammonium Chloride"],
+    "type": "neutralization",
+    "equation": "NH₃ + HCl → NH₄Cl",
+    "explanation": "Reaction between ammonia gas and hydrogen chloride gas forms white solid ammonium chloride smoke.",
+    "safety": "Fumes are irritating.",
+    "effects": {
+      "smoke": true,
+      "precipitate": {
+        "color": "#FFFFFF",
+        "amount": "light"
+      }
+    },
+    "animationConfig": {
+      "type": "neutralization",
+      "duration": 4000,
+      "gas": { "speed": "slow", "burstAtTop": false, "density": 0.6, "popParticles": false, "steamEffect": { "rise": true, "disperse": true, "intensity": 0.9 } },
+      "frost": { "color": "#FFFFFF", "opacity": 0.3, "crystalParticles": true, "duration": 3000 }
+    }
+  }
+]

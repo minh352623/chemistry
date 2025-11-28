@@ -1,0 +1,110 @@
+[
+  {
+    "id": "hcl",
+    "name": "Hydrochloric Acid",
+    "formula": "HCl",
+    "color": "#E8F4F8",
+    "type": "acid",
+    "hazard": "danger",
+    "description": "Strong acid, corrosive"
+  },
+  {
+    "id": "naoh",
+    "name": "Sodium Hydroxide",
+    "formula": "NaOH",
+    "color": "#F0F0F0",
+    "type": "base",
+    "hazard": "warning",
+    "description": "Strong base, caustic"
+  },
+  {
+    "id": "agno3",
+    "name": "Silver Nitrate",
+    "formula": "AgNO₃",
+    "color": "#F8F8F8",
+    "type": "salt",
+    "hazard": "caution",
+    "description": "Forms precipitates with halides"
+  },
+  {
+    "id": "nacl",
+    "name": "Sodium Chloride",
+    "formula": "NaCl",
+    "color": "#FFFFFF",
+    "type": "salt",
+    "hazard": "safe",
+    "description": "Common table salt"
+  },
+  {
+    "id": "cuso4",
+    "name": "Copper(II) Sulfate",
+    "formula": "CuSO₄",
+    "color": "#1E90FF",
+    "type": "salt",
+    "hazard": "caution",
+    "description": "Blue crystalline solid"
+  },
+  {
+    "id": "nahco3",
+    "name": "Sodium Bicarbonate",
+    "formula": "NaHCO₃",
+    "color": "#FFFFFF",
+    "type": "salt",
+    "hazard": "safe",
+    "description": "Baking soda"
+  },
+  {
+    "id": "ch3cooh",
+    "name": "Acetic Acid",
+    "formula": "CH₃COOH",
+    "color": "#FFFEF0",
+    "type": "organic",
+    "hazard": "safe",
+    "description": "Vinegar"
+  },
+  {
+    "id": "nh3",
+    "name": "Ammonia",
+    "formula": "NH₃",
+    "color": "#E0F7FA",
+    "type": "base",
+    "hazard": "caution",
+    "description": "Weak base, pungent smell"
+  },
+  {
+    "id": "h2so4",
+    "name": "Sulfuric Acid",
+    "formula": "H₂SO₄",
+    "color": "#FFF8DC",
+    "type": "acid",
+    "hazard": "danger",
+    "description": "Strong acid, highly corrosive"
+  },
+  {
+    "id": "kno3",
+    "name": "Potassium Nitrate",
+    "formula": "KNO₃",
+    "color": "#FFFFFF",
+    "type": "salt",
+    "hazard": "caution",
+    "description": "Oxidizer, used in gunpowder"
+  },
+  {
+    "id": "fe",
+    "name": "Iron Powder",
+    "formula": "Fe",
+    "color": "#696969",
+    "type": "metal",
+    "hazard": "safe",
+    "description": "Fine metallic powder"
+  },
+  {
+    "id": "s",
+    "name": "Sulfur",
+    "formula": "S",
+    "color": "#FFFF00",
+    "type": "nonmetal",
+    "hazard": "caution",
+    "description": "Yellow powder"
+  }
+]
